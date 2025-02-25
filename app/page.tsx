@@ -1,7 +1,10 @@
+import AutoDeleteTodoList from './components/AutoDeleteTodoList'
+import { TodoList as TodoListItems } from './const'
+
 export default function Home() {
   return (
-    <main>
-      <div>Next.js on GitHub Pages</div>
-    </main>
-  );
+    <>
+      <AutoDeleteTodoList data={TodoListItems} />
+    </>
+  )
 }
