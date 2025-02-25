@@ -1,7 +1,7 @@
 'use client'
 
-import { ReactNode } from 'react';
-import { Grid2, Grid2Props } from '@mui/material';
+import { ReactNode } from 'react'
+import { Grid2, Grid2Props } from '@mui/material'
 
 interface GridContainerProps extends Grid2Props {
   children: ReactNode
@@ -20,7 +20,7 @@ function GridContainer({ children, ...props }: GridContainerProps) {
     >
       {children}
     </Grid2>
-  );
+  )
 }
 
-export default GridContainer;
+export default GridContainer

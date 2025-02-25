@@ -1,9 +1,9 @@
 'use client'
 
-import { TodoItem } from '@/app/const';
-import Box from '@mui/material/Box';
-import Button from '@mui/material/Button';
-import Stack from '@mui/material/Stack';
+import { TodoItem } from '@/app/const'
+import Box from '@mui/material/Box'
+import Button from '@mui/material/Button'
+import Stack from '@mui/material/Stack'
 
 type ButtonStackProps = {
   todoList: TodoItem[]
@@ -11,10 +11,10 @@ type ButtonStackProps = {
 }
 
 function ButtonStack(props: ButtonStackProps) {
-  const { todoList, onClickBtn } = props;
+  const { todoList, onClickBtn } = props
 
   if (todoList.length === 0) {
-    return <></>;
+    return <></>
   }
 
   return (
@@ -43,4 +43,4 @@ function ButtonStack(props: ButtonStackProps) {
   )
 }
 
-export default ButtonStack;
+export default ButtonStack

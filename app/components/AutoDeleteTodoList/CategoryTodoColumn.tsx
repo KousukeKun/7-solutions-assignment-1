@@ -1,10 +1,10 @@
 'use client'
 
-import { Category, TodoItem } from '@/app/const';
-import Box from '@mui/material/Box';
-import Typography from '@mui/material/Typography';
-import ButtonStack from './ButtonStack';
-import { todo } from 'node:test';
+import { Category, TodoItem } from '@/app/const'
+import Box from '@mui/material/Box'
+import Typography from '@mui/material/Typography'
+import ButtonStack from './ButtonStack'
+import { todo } from 'node:test'
 
 type CategoryTodoColumnProps = {
   category: Category
@@ -13,7 +13,7 @@ type CategoryTodoColumnProps = {
 }
 
 function CategoryTodoColumn(props: CategoryTodoColumnProps) {
-  const { category, todoList, onClickBtn } = props;
+  const { category, todoList, onClickBtn } = props
 
   return (
     <Box
@@ -31,12 +31,9 @@ function CategoryTodoColumn(props: CategoryTodoColumnProps) {
       >
         {category}
       </Typography>
-      <ButtonStack
-        todoList={todoList}
-        onClickBtn={onClickBtn}
-      />
+      <ButtonStack todoList={todoList} onClickBtn={onClickBtn} />
     </Box>
-  );
+  )
 }
 
-export default CategoryTodoColumn;
+export default CategoryTodoColumn

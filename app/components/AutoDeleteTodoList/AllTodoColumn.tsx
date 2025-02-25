@@ -1,8 +1,8 @@
 'use client'
 
-import { TodoItem } from '@/app/const';
-import Box from '@mui/material/Box';
-import ButtonStack from './ButtonStack';
+import { TodoItem } from '@/app/const'
+import Box from '@mui/material/Box'
+import ButtonStack from './ButtonStack'
 
 type AllTodoColumnProps = {
   todoList: TodoItem[]
@@ -10,7 +10,7 @@ type AllTodoColumnProps = {
 }
 
 function AllTodoColumn(props: AllTodoColumnProps) {
-  const { todoList, onClickBtn } = props;
+  const { todoList, onClickBtn } = props
 
   return (
     <Box
@@ -19,12 +19,9 @@ function AllTodoColumn(props: AllTodoColumnProps) {
         height: '100%',
       }}
     >
-      <ButtonStack
-        todoList={todoList}
-        onClickBtn={onClickBtn}
-      />
+      <ButtonStack todoList={todoList} onClickBtn={onClickBtn} />
     </Box>
-  );
+  )
 }
 
-export default AllTodoColumn;
+export default AllTodoColumn
